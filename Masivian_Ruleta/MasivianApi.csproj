@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\MasivianRuleta.Entities.csproj" />
+    <ProjectReference Include="..\MasivianRuleta.DataAccess\MasivianRuleta.DataAccess.csproj" />
+    <ProjectReference Include="..\Masivian_Ruleta.Business.Interface\Masivian_Ruleta.Business.Interface.csproj" />
+    <ProjectReference Include="..\Masivian_Ruleta.Business\Masivian_Ruleta.Business.csproj" />
+    <ProjectReference Include="..\Masivian_Ruleta.Repository.Interface\Masivian_Ruleta.Repository.Interface.csproj" />
+    <ProjectReference Include="..\Masivian_Ruleta.Repository\Masivian_Ruleta.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

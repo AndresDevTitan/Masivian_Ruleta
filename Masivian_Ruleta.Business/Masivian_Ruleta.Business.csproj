@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Masivian_Ruleta.Business.Interface\Masivian_Ruleta.Business.Interface.csproj" />
+    <ProjectReference Include="..\Masivian_Ruleta.Repository.Interface\Masivian_Ruleta.Repository.Interface.csproj" />
+  </ItemGroup>
+
+</Project>
